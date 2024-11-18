@@ -1,0 +1,76 @@
+Script started on 2024-09-01 15:03:52+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="25"]
+Week 0 - Querying/Longlist/ $ [H[2JWeek 0 - Querying/Longlist/ $ [KWeek 0 - Querying/Longlist/ $ SELECT [KWeek 0 - Querying/Longlist/ $ SELECT ""t"i"t"l"e"[C FROM ""l"o"n"g"l"i"s"t"[C
+bash: SELECT: command not found
+Week 0 - Querying/Longlist/ $ sqlite3 longlist.db [K
+sqlite> ;WHERE ("year" = 2022 OR "year" = 2023) AND ("format" != 'hardcover')[C[C[C[C[C[C[C[C[28PSELECT "title", "format" FROM "longlist"[C[C[C[C[C[C[C[CWHERE ("year" = 2022 OR "year" = 2023) AND ("format" != 'hardcover')[C[C[C[C[C[C[C[C;[K[KSELECT "tiel[K[Kke[K[Kle"tle"[C[C[C FROM ""l"o"n"g"l"i"s"t"[C"[K[C
+   ...> WHERE ""t"i"t"l"e"[C LIKE '%love'%'[C;
++----------------------------+
+|           title            |
++----------------------------+
+| Love in the Big City       |
+| More Than I Love My Life   |
+| Love in the New Millennium |
+| Die, My Love               |
++----------------------------+
+sqlite> SELECT ""t"i"t"l"e"[C FROM ""l"o"n"g"l"i"s"t"
+   ...> WHERE ""t"i"t"e"[1P"k"l"e"[1P"[1P"[1P"l"e"[C :[KLIKE '''[K;T';h';e';%';
++-----------------------------------------+
+|                  title                  |
++-----------------------------------------+
+| The Gospel According to the New World   |
+| The Birthday Party                      |
+| The Book of Mother                      |
+| The Books of Jacob                      |
+| The War of the Poor                     |
+| The Dangers of Smoking in Bed           |
+| The Employees                           |
+| The Pear Field                          |
+| The Perfect Nine                        |
+| The Adventures of China Iron            |
+| The Discomfort of Evening               |
+| The Eighth Life                         |
+| The Enlightenment of The Greengage Tree |
+| The Memory Police                       |
+| The Other Name: Septology I-II          |
+| The Death of Murat Idrissi              |
+| The Faculty of Dreams                   |
+| The Pine Islands                        |
+| The Remainder                           |
+| The Shape of the Ruins                  |
+| The Years                               |
+| The 7th Function of Language            |
+| The Dinner Guest                        |
+| The Flying Mountain                     |
+| The Impostor                            |
+| The Stolen Bicycle                      |
+| The White Book                          |
+| The World Goes On                       |
++-----------------------------------------+
+sqlite> WHERE "title" LIKE 'The%';[C[C[C[C[C[C[C[CSELECT "title" FROM "longlist"
+   ...> SELECT "title" FROM "longlist"[C[C[C[C[C[C[C[C[4PWHERE "title" LIKE 'The%'; %';
++-----------------------------------------+
+|                  title                  |
++-----------------------------------------+
+| The Gospel According to the New World   |
+| The Birthday Party                      |
+| The Book of Mother                      |
+| The Books of Jacob                      |
+| The War of the Poor                     |
+| The Dangers of Smoking in Bed           |
+| The Employees                           |
+| The Pear Field                          |
+| The Perfect Nine                        |
+| The Adventures of China Iron            |
+| The Discomfort of Evening               |
+| The Eighth Life                         |
+| The Enlightenment of The Greengage Tree |
+| The Memory Police                       |
+| The Other Name: Septology I-II          |
+| The Death of Murat Idrissi              |
+| The Faculty of Dreams                   |
+| The Pine Islands                        |
+| The Remainder                           |
+| The Shape of the Ruins                  |
+| The Years                               |
+| The 7th Function of Language            |
+| The Dinner Guest                    

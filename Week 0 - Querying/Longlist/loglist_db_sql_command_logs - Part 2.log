@@ -1,0 +1,49 @@
+Script started on 2024-08-30 14:52:48+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="25"]
+Week 0 - Querying/Longlist/ $ [KWeek 0 - Querying/Longlist/ $ [KWeek 0 - Querying/Longlist/ $ sqlite3 longlist.db 
+sqlite> [H[2Jsqlite> SELECT ""t"i"e"l"[1P"[1P"t"k"e"[C[1Pe"le"[C[C, ""a"u"t"h"o"r"[C FROM ""l"o"n"g"l"i"s"t"[C WHERE [K[K[K[K[K[K[K
+   ...> WHERE ''y'e'a'r'[C = [C[1P[1@'[C[C[C022[K[K[K2022 OR ''y'e'a'r'[C = 20243[K[K3;
+sqlite> WHERE 'year' = 2022 OR 'year' = 2023;[C[C[C[C[C[C[C[CSELECT "title", "author" FROM "longlist"
+   ...> SELECT "title", "author" FROM "longlist"[C[C[C[C[C[C[C[C[3PWHERE 'year' = 2022 OR 'year' = 2023;[1P[1@"[1P[1@"[C[C[C[C[C[C[C[C[C[1P[1@"[1P[1@"
++----------------------------------------+-------------------------+
+|                 title                  |         author          |
++----------------------------------------+-------------------------+
+| Boulder                                | Eva Baltasar            |
+| Whale                                  | Cheon Myeong-Kwan       |
+| The Gospel According to the New World  | Maryse Condé            |
+| Standing Heavy                         | Gauz                    |
+| Time Shelter                           | Georgi Gospodinov       |
+| Is Mother Dead                         | Vigdis Hjorth           |
+| Jimi Hendrix Live in Lviv              | Andrey Kurkov           |
+| The Birthday Party                     | Laurent Mauvignier      |
+| While We Were Dreaming                 | Clemens Meyer           |
+| Pyre                                   | Perumal Murugan         |
+| Still Born                             | Guadalupe Nettel        |
+| A System So Magnificent It Is Blinding | Amanda Svensson         |
+| Ninth Building                         | Zou Jingzhi             |
+| Paradais                               | Fernanda Melchor        |
+| Heaven                                 | Mieko Kawakami          |
+| Love in the Big City                   | Sang Young Park         |
+| Happy Stories, Mostly                  | Norman Erikson Pasaribu |
+| Elena Knows                            | Claudia Piñeiro         |
+| The Book of Mother                     | Violaine Huisman        |
+| More Than I Love My Life               | David Grossman          |
+| Phenotypes                             | Paulo Scott             |
+| A New Name: Septology VI-VII           | Jon Fosse               |
+| After the Sun                          | Jonas Eika              |
+| Tomb of Sand                           | Geentanjali Shree       |
+| The Books of Jacob                     | Olga Tokarczuk          |
+| Cursed Bunny                           | Bora Chung              |
++----------------------------------------+-------------------------+
+sqlite> [H[2Jsqlite> WHERE "year" = 2022 OR "year" = 2023;[C[C[C[C[C[C[C[CSELECT "title", "author" FROM "longlist"[C[1P[1P[1P[1P[1P[1P[1@f[1@o[1@r[1@m[1@a[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+   ...> WHERE (([K""y"e"a"r"[C = 2024[K2 OR OR[K[K"year" = 2023) AND ()")")[1P)")f")o")r")m")a")t")[C )!)=) )")[1P)")")h")a")r")d")c")o")v")e")r")[C[1P)')[1Phardcover')'hardcover')
+   ...> ;
++----------------------------------------+-----------+
+|                 title                  |  format   |
++----------------------------------------+-----------+
+| Boulder                                | paperback |
+| Whale                                  | paperback |
+| The Gospel According to the New World  | paperback |
+| Standing Heavy                         | paperback |
+| Is Mother Dead                         | paperback |
+| The Birthday Party                     | paperback |
+| Wh

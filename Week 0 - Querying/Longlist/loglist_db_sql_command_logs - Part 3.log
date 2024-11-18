@@ -1,0 +1,86 @@
+Script started on 2024-08-31 15:14:29+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="24"]
+Week 0 - Querying/Longlist/ $ sqlite23[K[K3 longlist.db 
+sqlite> SELE[K[KE[KLEF[KCT ""t"i"t"k"e"[1P"[1P"l"e"[C, ""t"r"a"n"s"l"a"t"o"r"[C f[KFROM ""l"n"g"l"i"s"t"onglist"[C[C[C[C[C[C[C
+   ...> WHERE ""t"r"a"n"s"l"a"t"o"r"[C IS 'Ny[KYKK[K[K[K[KNULL;[1PNULL;
++-----------------------------------------+------------+
+|                  title                  | translator |
++-----------------------------------------+------------+
+| The Perfect Nine                        | NULL       |
+| The Enlightenment of The Greengage Tree | NULL       |
++-----------------------------------------+------------+
+sqlite> WHERE "translator" IS NULL;[C[C[C[C[C[C[C[CSELECT "title", "translator" FROM "longlist"
+   ...> SELECT "title", "translator" FROM "longlist"[C[C[C[C[C[C[C[C[17PWHERE "translator" IS NULL;[CNULL;ONULL;TNULL; NULL;\NULL;
+Parse error: unrecognized token: "\"
+  slator" FROM "longlist" WHERE "translator" IS NOT \NULL;
+                                      error here ---^
+sqlite> WHERE "translator" IS NOT \NULL;[C[C[C[C[C[C[C[CSELECT "title", "translator" FROM "longlist"
+   ...> SELECT "title", "translator" FROM "longlist"[C[C[C[C[C[C[C[C[12PWHERE "translator" IS NOT \NULL;[1PNULL;
++--------------------------------------------+------------------------------------------------+
+|                   title                    |                   translator                   |
++--------------------------------------------+------------------------------------------------+
+| Boulder                                    | Nicole d'Amonville Alegría                     |
+| Whale                                      | Jae Won Chung                                  |
+| The Gospel According to the New World      | Richard Philcox                                |
+| Standing Heavy                             | Frank Wynne                                    |
+| Time Shelter                               | Angela Rodel                                   |
+| Is Mother Dead                             | Charlotte Barslund                             |
+| Jimi Hendrix Live in Lviv                  | Reuben Woolley                                 |
+| The Birthday Party                         | Daniel Levin Becker                            |
+| While We Were Dreaming                     | Katy Derbyshire                                |
+| Pyre                                       | Aniruddhan Vasudevan                           |
+| Still Born                                 | Rosalind Harvey                                |
+| A System So Magnificent It Is Blinding     | Nichola Smalley                                |
+| Ninth Building                             | Jeremy Tiang                                   |
+| Paradais                                   | Sophie Hughes                                  |
+| Heaven                                     | Sam Bett and David Boyd                        |
+| Love in the Big City                       | Anton Hur                                      |
+| Happy Stories, Mostly                      | Tiffany Tsao                                   |
+| Elena Knows                                | Frances Riddle                                 |
+| The Book of Mother                         | Leslie Camhi                                   |
+| More Than I Love My Life                   | Jessica Cohen                                  |
+| Phenotypes                                 | Daniel Hahn                                    |
+| A New Name: Septology VI-VII               | Damion Searls                                  |
+| After the Sun                              | Sherilyn Nicolette Hellberg                    |
+| Tomb of Sand                               | Daisy Rockwell                                 |
+| The Books of Jacob                         | Jennifer Croft                                 |
+| Cursed Bunny                               | Anton Hur                                      |
+| The War of the Poor                        | Mark Polizzotti                                |
+| When We Cease to Understand the World      | Adrian Nathan West                             |
+| Wretchedness                               | Nichola Smalley                                |
+| An Inventory of Losses                     | Jackie Smith                                   |
+| At Night All Blood is Black                | Anna Moschovakis                               |
+| I Live in the Slums                        | Karen Gernant and Chen Zeping                  |
+| In Memory of Memory                        | Sasha Dugdale                                  |
+| Minor Detail                               | Elisabeth Jaquette                             |
+| Summer Brother                             | David Doherty                                  |
+| The Dangers of Smoking in Bed              | Megan McDowell                                 |
+| The Employees                              | Martin Aitken                                  |
+| The Pear Field                             | Elizabeth Heighway                             |
+| The Adventures of China Iron               | Fiona Mackintosh and Iona Macintyre            |
+| The Discomfort of Evening                  | Michele Hutchinson                             |
+| The Eighth Life                            | Charlotte Collins and Ruth Martin              |
+| The Memory Police                          | Stephen Snyder                                 |
+| The Other Name: Septology I-II             | Damion Searls                                  |
+| Tyll                                       | Ross Benjamin                                  |
+| Faces on the Tip of My Tongue              | Sophie Lewis and Jennifer Higgins              |
+| Hurricane Season                           | Sophie Hughes                                  |
+| Little Eyes                                | Megan McDowell                                 |
+| Mac and His Problem                        | Margaret Jull Costa and Sophie Hughes          |
+| Red Dog                                    | Michiel Heyns                                  |
+| Serotonin                                  | Shaun Whiteside                                |
+| At Dusk                                    | Sora Kim-Russell                               |
+| Celestial Bodies                           | Marilyn Booth                                  |
+| Drive Your Plow Over the Bones of the Dead | Antonia Lloyd-Jones                            |
+| Four Soldiers                              | Sam Taylor                                     |
+| Jokes for the Gunmen                       | Jonathan Wright                                |
+| Love in the New Millennium                 | Eileen Myles and Annelise Finegan Wasmoen      |
+| Mouthful of Birds                          | Megan McDowell                                 |
+| The Death of Murat Idrissi                 | Sam Garrett                                    |
+| The Faculty of Dreams                      | Deborah Bragan-Turner                          |
+| The Pine Islands                           | Jen Calleja                                    |
+| The Remainder                              | Sophie Hughes                                  |
+| The Shape of the Ruins                     | Anne McLean                                    |
+| The Years                                  | Alison L. Strayer                              |
+| Frankenstein in Baghdad                    | Jonathan Wright                                |
+| Go, Went, Gone                             | Susan Bernofsky                                |
+| Like a Fading Shadow                       | Camilo A. Ramirez                              
